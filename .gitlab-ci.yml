@@ -1,0 +1,25 @@
+default:
+  image: node:12.16.2-alpine
+
+stages: 
+  - build
+  - lint
+  - test
+
+build-code-job:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+
+lint-code-job:
+  stage: lint
+  script:
+    - npm install
+    - npm run lint
+
+unit-test-job:
+  stage: test
+  script:
+    - npm install
+    - npm run test:unit
