@@ -1,4 +1,4 @@
-import { sum } from '../calc';
+import { sum } from '../../../domain/calc';
 
 describe('calc', () => {
   describe('sum', () => {
